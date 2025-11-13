@@ -1990,7 +1990,7 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Która metoda tworzy nowy element HTML?',
                 options: ['appendChild()', 'createElement()', 'createNode()', 'newElement()'],
                 correct: 1,
-                points: 0.5
+                points: 1
                 ,
                 explanation: 'Metoda document.createElement(tagName) tworzy nowy element HTML o podanym tagu. appendChild nie tworzy elementu, tylko dodaje istniejący.'
             },
@@ -1999,7 +1999,7 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Co robi metoda appendChild()?',
                 options: ['Usuwa element z DOM', 'Dodaje element jako ostatnie dziecko rodzica', 'Tworzy nowy element', 'Zastępuje istniejący element'],
                 correct: 1,
-                points: 0.5
+                points: 1
                 ,
                 explanation: 'appendChild dodaje podany węzeł jako ostatnie dziecko elementu rodzica. Jeśli węzeł już istnieje, zostanie przeniesiony.'
             },
@@ -2008,7 +2008,7 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Ile parametrów przyjmuje metoda insertBefore()?',
                 options: ['1', '2', '3', '4'],
                 correct: 1,
-                points: 0.5
+                points: 1
                 ,
                 explanation: 'insertBefore przyjmuje 2 parametry: nowy węzeł i węzeł referencyjny (przed którym zostanie wstawiony).'
             },
@@ -2017,7 +2017,7 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Która metoda usuwa element z DOM?',
                 options: ['deleteChild()', 'removeChild()', 'deleteElement()', 'remove()'],
                 correct: 1,
-                points: 0.5
+                points: 1
                 ,
                 explanation: 'removeChild jest metodą na rodzicu, która usuwa wskazany węzeł i zwraca go. Element.remove() jest wygodniejszą metodą wywoływaną na samym elemencie.'
             },
@@ -2026,7 +2026,7 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Co zwraca metoda removeChild()?',
                 options: ['null', 'undefined', 'usunięty węzeł', 'true/false'],
                 correct: 2,
-                points: 0.5
+                points: 1
                 ,
                 explanation: 'removeChild zwraca usunięty węzeł (Node), co pozwala na jego dalsze użycie lub ponowne wstawienie.'
             },
@@ -2035,105 +2035,105 @@ ul.replaceChild(newLi, secondChild);`,
                 question: 'Która metoda zastępuje istniejący element nowym?',
                 options: ['changeChild()', 'replaceChild()', 'swapChild()', 'updateChild()'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 7,
                 question: 'Jaki parametr przyjmuje createElement()?',
                 options: ['id elementu', 'klasę elementu', 'nazwę tagu', 'tekst elementu'],
                 correct: 2,
-                points: 0.5
+                points: 1
             },
             {
                 id: 8,
                 question: 'Gdzie insertBefore wstawia nowy element?',
                 options: ['Na końcu rodzica', 'Na początku rodzica', 'Przed wskazanym elementem referencyjnym', 'Po wskazanym elemencie referencyjnym'],
                 correct: 2,
-                points: 0.5
+                points: 1
             },
             {
                 id: 9,
                 question: 'Co się stanie, gdy appendChild zostanie użyte na elemencie, który już istnieje w DOM?',
                 options: ['Zostanie utworzony duplikat', 'Wystąpi błąd', 'Element zostanie przeniesiony', 'Nic się nie stanie'],
                 correct: 2,
-                points: 0.5
+                points: 1
             },
             {
                 id: 10,
                 question: 'Która z poniższych linijek kodu prawidłowo dodaje tekst do nowo utworzonego elementu?',
                 options: ["element.text = 'Hello';", "element.textContent = 'Hello';", "element.addText('Hello');", "element.setText('Hello');"],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 11,
                 question: 'Jaka jest rola atrybutu \'id\' w DOM?',
                 options: ['Ustawia styl elementu', 'Identyfikuje element za pomocą selektora #id', 'Definiuje tekst elementu', 'Określa rozmiar elementu'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 12,
                 question: 'Czy appendChild zwraca wartość?',
                 options: ['Nie, zwraca null', 'Tak, zwraca dodany element', 'Tak, zwraca liczbę elementów', 'Nie, zwraca undefined'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 13,
                 question: 'Jaki jest najprostszy sposób na usunięcie elementu z DOM?',
                 options: ['element.delete()', 'element.remove()', 'deleteNode(element)', 'element.disappear()'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 14,
                 question: 'Czy insertBefore wymaga węzła referencyjnego?',
                 options: ['Nie, jest opcjonalny', 'Tak, zawsze jest wymagany', 'Tylko jeśli element istnieje', 'Zależy od przeglądarki'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 15,
                 question: 'Jaka właściwość zwraca tekst elementu jako string?',
                 options: ['element.text', 'element.content', 'element.textContent', 'element.getText()'],
                 correct: 2,
-                points: 0.5
+                points: 1
             },
             {
                 id: 16,
                 question: 'Czy możliwe jest skopiowanie elementu zamiast jego przenoszenia?',
                 options: ['Nie, zawsze przenosi', 'Tak, za pomocą cloneNode()', 'Tylko w przeglądarce Chrome', 'Nie, JavaScript tego nie obsługuje'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 17,
                 question: 'Co zwraca metoda removeChild?',
                 options: ['true jeśli usunięto, false jeśli nie', 'Liczbę pozostałych elementów', 'Usunięty węzeł', 'null zawsze'],
                 correct: 2,
-                points: 0.5
+                points: 1
             },
             {
                 id: 18,
                 question: 'Jaki jest rezultat replaceChild(nowy, stary)?',
                 options: ['Stary element jest duplikowany', 'Stary element jest zamieniany na nowy', 'Oba elementy istnieją obok siebie', 'Nowy element jest ignorowany'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 19,
                 question: 'Czy firstChild zawsze zwraca element HTML?',
                 options: ['Tak, zawsze', 'Nie, może zwrócić węzeł tekstowy', 'Tylko jeśli ma atrybuty', 'Zależy od przeglądarki'],
                 correct: 1,
-                points: 0.5
+                points: 1
             },
             {
                 id: 20,
                 question: 'Która metoda jest najnowsza i najprostsza do usuwania elementu?',
                 options: ['parent.removeChild(element)', 'element.remove()', 'deleteElement(element)', 'element.delete()'],
                 correct: 1,
-                points: 0.5
+                points: 1
             }
         ];
 
