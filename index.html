@@ -2191,8 +2191,8 @@ ul.replaceChild(newLi, secondChild);`,
                 }
             });
             
-            const percentage = Math.round((score / 10) * 100);
-            document.getElementById('scoreDisplay').textContent = `${score} / 10`;
+            const percentage = Math.round(Math.round((score / 20) * 100));
+            document.getElementById('scoreDisplay').textContent = `${score} / 20`;
             document.getElementById('scorePercent').textContent = percentage;
         }
 
@@ -2275,7 +2275,7 @@ ul.replaceChild(newLi, secondChild);`,
                     <div class="grade-display ${gradeClass}">${percentage}%</div>
                     <p style="color: var(--text-primary); font-size: 1.5rem; margin-top: 20px;">Poprawne: ${correctCount}/20</p>
                     <p style="color: var(--text-secondary); font-size: 1.2rem; margin-top: 10px;">Błędne: ${incorrectCount}/20</p>
-                    <p style="color: var(--text-primary); font-size: 1.3rem; margin-top: 15px;">Twój wynik: ${score}/10 (${percentage}%)</p>
+                    <p style="color: var(--text-primary); font-size: 1.3rem; margin-top: 15px;">Twój wynik: ${score}/20 (${percentage}%)</p>
                 </div>
             `;
             
