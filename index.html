@@ -2239,9 +2239,9 @@ ul.replaceChild(newLi, secondChild);`,
                 }
             });
             
-            const percentage = Math.round((score / 10) * 100);
+            const percentage = Math.round((score / 20) * 100);
             // Update header score/percentage now that user submitted
-            document.getElementById('scoreDisplay').textContent = `${score} / 10`;
+            document.getElementById('scoreDisplay').textContent = `${score} / 20`;
             document.getElementById('scorePercent').textContent = percentage;
 
             showResults(score, percentage);
